@@ -1,0 +1,153 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--cyan);
+}
+
+.attribution a {
+  color: var(--cyan);
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: var(--light-gray);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.row {
+  justify-content: center;
+  /* margin: 0; */
+}
+
+.container-lg {
+  justify-content: center;
+  margin-top: 163px;
+}
+
+/* Heading */
+
+.heading-column {
+  background-color: #fff;
+  padding: 45px 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+.heading-column p {
+  color: var(--grayish-blue);
+}
+
+.big-heading {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+/* Pricing Section */
+
+.pricing-column {
+  background-color: var(--cyan);
+  padding: 33.5px 40px;
+  color: var(--light-gray);
+  border-radius: 0 0 0 10px;
+}
+
+.signup-button {
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 7px;
+  background-color: #BFDF32;
+  border: solid transparent 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 16px 15px 0 rgba(117, 118, 116, 0.31);
+  -moz-box-shadow: 0 16px 15px 0 rgba(117, 118, 116, 0.31);
+  box-shadow: 0 16px 15px 0 rgba(117, 118, 116, 0.31);
+}
+
+.signup-button:hover {
+  border: solid transparent 1px;
+  background: #BFDF32;
+  background-image: -webkit-linear-gradient(top, #BFDF32, #7E931F);
+  background-image: -moz-linear-gradient(top, #BFDF32, #7E931F);
+  background-image: -ms-linear-gradient(top, #BFDF32, #7E931F);
+  background-image: -o-linear-gradient(top, #BFDF32, #7E931F);
+  background-image: -webkit-gradient(to bottom, #BFDF32, #7E931F);
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+/* Why us Section */
+
+.whyus-column {
+  background-color: #4abebd;
+  padding: 33.5px 40px;
+  color: var(--light-gray);
+  border-radius: 0 0 10px 0;
+}
+
+.whyus-column p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Border Radius */
+
+@media (max-width: 991px){
+  .pricing-column{
+    border-radius: 0;
+  }
+  .whyus-column{
+    border-radius: 0 0 10px 10px;
+  }
+  .container-lg{
+    padding: 0 55.5px;
+  }
+}
